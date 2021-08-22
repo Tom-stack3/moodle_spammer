@@ -1,7 +1,5 @@
 import time
-from datetime import datetime
 from selenium.webdriver import Firefox
-from bs4 import BeautifulSoup
 from selenium.webdriver.common.keys import Keys
 
 
