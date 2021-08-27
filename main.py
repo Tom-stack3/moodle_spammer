@@ -2,6 +2,7 @@ import time
 from selenium.webdriver import Firefox
 from selenium.webdriver.common.keys import Keys
 
+# Written by Tommy Zaft
 
 def launce_and_login(link_to_login):
     # The file where the USERNAME is stored in the first line, and the PASSWORD is stored in the second line
@@ -83,7 +84,6 @@ def main():
     get_chat_ready(browser, person_full_name)
 
     for i in range(messages_to_send):
-        current_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
         text = "ah yes " + ' ' + str(i + 1)
         # Send a message in the currently opened chat
         print(text)
