@@ -72,12 +72,14 @@ def main():
 
     link_to_login = "https://lemida.biu.ac.il/blocks/login_ldap/index.php"
 
-    # login and get the browser
+    # Login and get the browser
     browser = launce_and_login(link_to_login)
 
     # The file where the full name of the other person to chat with is stored
+    # (in the first line of the file)
     f = open("people.txt", "r")
-    # the full name, in Hebrew
+
+    # The full name, in Hebrew
     person_full_name = f.readline()
 
     # Open up the chat with the other person
