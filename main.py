@@ -67,7 +67,7 @@ def get_chat_ready(browser, person):
 
 
 def main():
-    messages_to_send = 15
+    num_of_messages_to_send = 15
     start_time = time.time()
 
     link_to_login = "https://lemida.biu.ac.il/blocks/login_ldap/index.php"
@@ -85,7 +85,7 @@ def main():
     # Open up the chat with the other person
     get_chat_ready(browser, person_full_name)
 
-    for i in range(messages_to_send):
+    for i in range(num_of_messages_to_send):
         text = "ah yes " + ' ' + str(i + 1)
         # Send a message in the currently opened chat
         print(text)
